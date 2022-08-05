@@ -13,12 +13,17 @@ public class MyCat extends Cat
      */
     public void act()
     {
-        if (this.isAlone()){
-            this.sleep(5);
-        }
-        else{
-            this.shoutHooray();
-        }
+        //if (this.isAlone()){
+          //  this.sleep(5);
+        //}
+        //else{
+          //  this.shoutHooray();
+        //}
         
+        sleep(2);
+        if (isBored())
+        {
+            shoutHooray();
+        }
     }    
 }
